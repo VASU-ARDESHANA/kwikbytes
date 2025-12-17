@@ -22,11 +22,6 @@ export const sumitBhaiNumber = {
 	label: "99987 99971",
 };
 
-export const email = {
-	href: "mailto:info@kwikbytes.com",
-	label: "info@astropie.com",
-};
-
 export const address = {
 	street: "1234 Space Street",
 	city: "Galaxy City",
