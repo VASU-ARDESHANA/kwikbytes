@@ -12,14 +12,14 @@ import WideImage from "~/components/WideImage.astro";
 import ReviewSlider from "~/components/ReviewSlider.astro";
 
 // Images
-import PizzaHero from "~/assets/images/pizza-hero.png";
-import Pizza from "~/assets/images/pizza.png";
-import Spaghetti from "~/assets/images/spaghetti.png";
-import Fish from "~/assets/images/fish.png";
-import DecorativeImage from "~/assets/images/pexels-shvetsa-5953523.jpg";
-import reviewAuthors from "~/assets/images/review-authors.png";
-import Dessert from "~/assets/images/dessert.png";
-import Mussels from "~/assets/images/mussels2.png";
+// import PizzaHero from "~/assets/images/pizza-hero.png";
+// import Pizza from "~/assets/images/pizza.png";
+// import Spaghetti from "~/assets/images/spaghetti.png";
+// import Fish from "~/assets/images/fish.png";
+// import DecorativeImage from "~/assets/images/pexels-shvetsa-5953523.jpg";
+// import reviewAuthors from "~/assets/images/review-authors.png";
+// import Dessert from "~/assets/images/dessert.png";
+// import Mussels from "~/assets/images/mussels2.png";
 ---
 
 <Layout title="Home" pageTitle="Home" description="Welcome to our restaurant!">
@@ -40,7 +40,7 @@ import Mussels from "~/assets/images/mussels2.png";
 				</div>
 			</div>
 			<div slot="hero-content-right">
-				<Picture
+				<!-- <Picture
 					class:list={"mx-auto"}
 					src={PizzaHero}
 					height={600}
@@ -48,12 +48,12 @@ import Mussels from "~/assets/images/mussels2.png";
 					alt="A description of my image."
 					loading={"eager"}
 					fetchpriority={"high"}
-				/>
+				/> -->
 			</div>
 		</Hero>
 	</Section>
 
-	<WideImage image={DecorativeImage} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} />
+	<!-- <WideImage image={DecorativeImage} alt="Just an image" class:list={"aspect-video lg:aspect-[16/6]"} /> -->
 
 	<Section class:list={"bg-white"}>
 		<Heading>
@@ -66,12 +66,12 @@ import Mussels from "~/assets/images/mussels2.png";
 		<Grid>
 			<div slot="grid-content-1">
 				<div class="flex flex-col items-center prose text-center">
-					<Picture
+					<!-- <Picture
 						class:list={"not-prose w-full h-auto"}
 						src={Pizza}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
-					/>
+					/> -->
 					<h3 class="h4 mt-0 font-black">Pasta &amp; Spaghetti</h3>
 					<p>
 						Pasta is a staple of Italian cuisine, with a rich history dating back centuries. It comes in
@@ -82,12 +82,12 @@ import Mussels from "~/assets/images/mussels2.png";
 
 			<div slot="grid-content-2">
 				<div class="flex flex-col items-center prose text-center">
-					<Picture
+					<!-- <Picture
 						class:list={"not-prose w-full h-auto"}
 						src={Spaghetti}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
-					/>
+					/> -->
 					<h3 class="h4 mt-0 font-black">Pasta &amp; Spaghetti</h3>
 					<p>
 						Pasta is a staple of Italian cuisine, with a rich history dating back centuries. It comes in
@@ -98,12 +98,12 @@ import Mussels from "~/assets/images/mussels2.png";
 
 			<div slot="grid-content-3">
 				<div class="flex flex-col items-center prose text-center">
-					<Picture
+					<!-- <Picture
 						class:list={"not-prose w-full h-auto"}
 						src={Fish}
 						formats={["avif", "webp"]}
 						alt="A description of my image."
-					/>
+					/> -->
 					<h3 class="h4 mt-0 font-black">Pasta &amp; Spaghetti</h3>
 					<p>
 						Pasta is a staple of Italian cuisine, with a rich history dating back centuries. It comes in
@@ -150,13 +150,13 @@ import Mussels from "~/assets/images/mussels2.png";
 				</div>
 			</div>
 			<div slot="hero-content-right">
-				<Picture
+				<!-- <Picture
 					class:list={"mx-auto"}
 					src={PizzaHero}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
-				/>
+				/> -->
 			</div>
 		</Hero>
 	</Section>
@@ -177,13 +177,13 @@ import Mussels from "~/assets/images/mussels2.png";
 
 			</div>
 			<div slot="hero-content-right">
-				<Picture
+				<!-- <Picture
 					class:list={"mx-auto"}
 					src={Mussels}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
-				/>
+				/> -->
 			</div>
 		</Hero>
 	</Section>
@@ -208,7 +208,7 @@ import Mussels from "~/assets/images/mussels2.png";
 				</div>
 
 				<div slot="hero-content-right">
-					<Picture src={reviewAuthors} alt="Review authors" class="w-full h-auto" />
+					<!-- <Picture src={reviewAuthors} alt="Review authors" class="w-full h-auto" /> -->
 				</div>
 			</Hero>
 		</div>
@@ -262,13 +262,13 @@ import Mussels from "~/assets/images/mussels2.png";
 			</div>
 
 			<div slot="hero-content-right">
-				<Picture
+				<!-- <Picture
 					class:list={"mx-auto"}
 					src={Dessert}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
-				/>
+				/> -->
 			</div>
 		</Hero>
 	</Section>
@@ -292,13 +292,13 @@ import Mussels from "~/assets/images/mussels2.png";
 			</div>
 
 			<div slot="hero-content-right">
-				<Picture
+				<!-- <Picture
 					class:list={"mx-auto"}
 					src={Dessert}
 					height={600}
 					formats={["avif", "webp"]}
 					alt="A description of my image."
-				/>
+				/> -->
 			</div>
 		</Hero>
 	</Section>
