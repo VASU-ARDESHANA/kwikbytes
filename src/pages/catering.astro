@@ -1,0 +1,110 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import Article from "~/components/Article.astro";
+import Badge from "~/components/Badge.astro";
+import ButtonCallUs from "~/components/ButtonCallUs.astro";
+import { phone, sumitBhaiNumber } from "~/data/config";
+---
+
+<Layout
+    title="Catering & Party Orders"
+    pageTitle="Catering"
+    description="Catering and party orders by KwikBytes – perfect for events, celebrations, and corporate gatherings."
+>
+    <!-- Hero Section -->
+    <Section class:list={"bg-white"}>
+        <Hero>
+            <div slot="hero-content-left" class="prose max-w-none">
+                <Badge title="A venture of Brahmani Catering" />
+                <h1 class="font-black">Catering & Party Orders</h1>
+
+                <p>
+                    Planning a party, event, or office gathering? KwikBytes
+                    brings flavor to your celebration with customizable catering
+                    and bulk orders. From quick bites to full meals, we serve
+                    food that keeps people coming back for seconds.
+                </p>
+
+                <div class="mt-8 flex flex-wrap gap-6">
+                    <ButtonCallUs number="7383023407" label="Call Ankit" />
+                    <ButtonCallUs number="9998799971" label="Call Sumit" />
+                </div>
+            </div>
+
+            <!-- <div slot="hero-content-right" class="hidden lg:block">
+				<p class="text-sm text-muted-foreground italic">
+					Good food travels fast. Let us cater your next event.
+				</p>
+			</div> -->
+        </Hero>
+    </Section>
+
+    <!-- Catering Details -->
+    <Section class:list={"bg-white"}>
+        <Article>
+            <h2>Our Catering Services</h2>
+            <p>
+                We offer both <strong>catering</strong> and <strong
+                    >party orders</strong
+                > for small gatherings and large events alike. Whether it’s a birthday,
+                wedding function, office meeting, or family celebration, our menu
+                is flexible and designed to please every palate.
+            </p>
+
+            <h3>What We Serve</h3>
+            <ul>
+                <li><strong>Tea & Coffee</strong></li>
+                <li><strong>Milk Shakes & Lassi</strong></li>
+                <li><strong>Fries</strong></li>
+                <li><strong>Gujju Delight (Thepla)</strong></li>
+                <li><strong>Maggie</strong></li>
+                <li><strong>Sandwiches</strong></li>
+                <li><strong>The Paratha Patch</strong></li>
+                <li><strong>Sabji Junction</strong></li>
+            </ul>
+
+            <h3>Why Choose KwikBytes Catering?</h3>
+            <ul>
+                <li>Freshly prepared food for every order</li>
+                <li>Ideal for parties, events, and corporate orders</li>
+                <li>Flexible menu options based on your needs</li>
+                <li>Backed by the experience of Brahmani Catering</li>
+            </ul>
+
+            <h3>Place Your Order</h3>
+            <p>
+                To discuss menu options, quantities, and pricing, call us
+                directly:
+            </p>
+            <ul>
+                <li>
+                    <strong> Ankit:</strong>
+                    <a
+                        href={phone.href}
+                        class="no-underline hover:no-underline hover:no-underline underline-offset-4"
+                    >
+                        {phone.label}
+                    </a>
+                </li>
+                <li>
+                    <strong>Sumit:</strong>
+                    <a
+                        href={sumitBhaiNumber.href}
+                        class="no-underline hover:no-underline hover:no-underline underline-offset-4"
+                    >
+                        {sumitBhaiNumber.label}
+                    </a>
+                </li>
+            </ul>
+
+            <p>
+                <em>
+                    Big gathering or small celebration, KwikBytes makes sure
+                    every plate leaves a smile.
+                </em>
+            </p>
+        </Article>
+    </Section>
+</Layout>

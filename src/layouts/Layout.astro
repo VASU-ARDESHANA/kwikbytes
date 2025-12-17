@@ -1,0 +1,31 @@
+---
+import "~/styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import Header from "~/components/Header.astro";
+import Footer from "~/components/Footer.astro";
+const { pageTitle, title, description } = Astro.props;
+const baseUrl = `${Astro.url.protocol}//${Astro.url.host}`;
+import { siteLang, themeColor } from "~/data/config";
+---
+
+<!doctype html>
+<html lang={siteLang}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<style is:global>
+			@import "swiper/css";
+		</style>
+		<title>{pageTitle}</title>
+		<ClientRouter />
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

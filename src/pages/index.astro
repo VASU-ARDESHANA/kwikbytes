@@ -1,0 +1,54 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import Dessert from "~/assets/images/dessert.png";
+import Logo from "~/assets/logo.png";
+import { Picture, Image } from "astro:assets";
+import { loadRenderers } from "astro:container";
+---
+
+<Layout
+	title="KwikBytes"
+	pageTitle="KwikBytes"
+	description="KwikBytes – authentic food, bold flavors. Our website is under construction, but the menu is ready to explore."
+>
+	<Section class:list={"bg-white"}>
+		<Hero>
+			<div
+				slot="hero-content-left"
+				class="prose max-w-none max-lg:order-1"
+			>
+				<Badge title="il ristorante italiana" />
+				<h1 class="font-black">We’re Cooking Something Amazing</h1>
+
+				<p>
+					Our website is currently <strong>under construction</strong
+					>, but our kitchen is in full swing. Explore our food menu
+					and discover the flavors that make KwikBytes a local
+					favorite.
+				</p>
+
+				<p class="text-sm text-muted-foreground">
+					Dine in • Takeaway • Catering • Party Orders
+				</p>
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/menu">See our menu</Button>
+				</div>
+			</div>
+			<div slot="hero-content-right">
+				<Picture
+					class:list={"mx-auto"}
+					src={Logo}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+</Layout>
