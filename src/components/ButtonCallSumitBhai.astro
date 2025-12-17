@@ -1,0 +1,20 @@
+---
+import IconPhone from "~/assets/icons/phone.svg";
+import { sumitBhaiNumber } from "~/data/config";
+---
+
+<a
+  href={sumitBhaiNumber.href}
+  class="not-prose group inline-flex items-center gap-x-3 rounded-full bg-white px-4 py-3 shadow-sm ring-1 ring-black/5 no-underline hover:no-underline transition duration-300 hover:shadow-md hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-green"
+>
+  <IconPhone
+    class="size-11 rounded-full bg-brand-red p-2.5 text-white transition duration-300 group-hover:scale-105"
+  />
+
+  <div class="leading-tight no-underline hover:no-underline">
+    <p class="text-sm text-gray-500">Call us</p>
+    <span class="text-brand-green font-semibold tracking-wide">
+      {sumitBhaiNumber.label}
+    </span>
+  </div>
+</a>

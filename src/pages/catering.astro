@@ -5,8 +5,10 @@ import Hero from "~/components/Hero.astro";
 import Article from "~/components/Article.astro";
 import Badge from "~/components/Badge.astro";
 import ButtonCallUs from "~/components/ButtonCallUs.astro";
+import ButtonCallSumitBhai from "~/components/ButtonCallSumitBhai.astro";
 import { phone, sumitBhaiNumber } from "~/data/config";
-import Logo from "~/assets/logo.png";
+import Brahmani from "~/assets/brahmani.png";
+import Brahmani_black from "~/assets/brahmani_black.png";
 import { Picture, Image } from "astro:assets";
 ---
 
@@ -21,7 +23,7 @@ import { Picture, Image } from "astro:assets";
             <div slot="hero-content-right">
                 <Picture
                     class:list={"mx-auto"}
-                    src={Logo}
+                    src={Brahmani_black}
                     height={600}
                     formats={["avif", "webp"]}
                     alt="A description of my image."
@@ -41,8 +43,11 @@ import { Picture, Image } from "astro:assets";
                 </p>
 
                 <div class="mt-8 flex flex-wrap gap-6">
+                    <ButtonCallSumitBhai
+                        number="9998799971"
+                        label="Call Sumit"
+                    />
                     <ButtonCallUs number="7383023407" label="Call Ankit" />
-                    <ButtonCallUs number="9998799971" label="Call Sumit" />
                 </div>
             </div>
 
@@ -93,21 +98,21 @@ import { Picture, Image } from "astro:assets";
             </p>
             <ul>
                 <li>
-                    <strong> Ankit:</strong>
-                    <a
-                        href={phone.href}
-                        class="no-underline hover:no-underline hover:no-underline underline-offset-4"
-                    >
-                        {phone.label}
-                    </a>
-                </li>
-                <li>
-                    <strong>Sumit:</strong>
+                    <strong>Sumit Jethwa:</strong>
                     <a
                         href={sumitBhaiNumber.href}
                         class="no-underline hover:no-underline hover:no-underline underline-offset-4"
                     >
                         {sumitBhaiNumber.label}
+                    </a>
+                </li>
+                <li>
+                    <strong>Ankit Jethwa:</strong>
+                    <a
+                        href={phone.href}
+                        class="no-underline hover:no-underline hover:no-underline underline-offset-4"
+                    >
+                        {phone.label}
                     </a>
                 </li>
             </ul>

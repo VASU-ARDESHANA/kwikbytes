@@ -267,42 +267,42 @@
 			{
 				"name": "Classic Maggi",
 				"description": "Traditional Maggi noodles",
-				"price": 25
+				"price": 50
 			},
 			{
 				"name": "Double Masala Maggi",
 				"description": "Extra spicy masala Maggi",
-				"price": 25
+				"price": 60
 			},
 			{
 				"name": "Butter Double Masala Maggi",
 				"description": "Buttery masala Maggi",
-				"price": 35
+				"price": 70
 			},
 			{
 				"name": "Veg Masala Maggi",
 				"description": "Maggi with fresh vegetables",
-				"price": 50
+				"price": 70
 			},
 			{
 				"name": "Schezwan Maggi",
 				"description": "Spicy Schezwan-style Maggi",
-				"price": 50
+				"price": 70
 			},
 			{
 				"name": "Garlic Tadka Maggi",
 				"description": "Maggi with aromatic garlic tempering",
-				"price": 60
+				"price": 80
 			},
 			{
 				"name": "Veg Cheese Double Masala Maggi",
 				"description": "Cheesy vegetable masala Maggi",
-				"price": 65
+				"price": 95
 			},
 			{
 				"name": "Kwik Bytes Special Maggi",
 				"description": "Our chef's special Maggi creation",
-				"price": 75
+				"price": 100
 			}
 		]
 	},
@@ -548,7 +548,7 @@
 			{
 				"name": "Kwik Bytes Special Maggi",
 				"description": "Our chef's special Maggi creation",
-				"price": 75
+				"price": 100
 			},
 			{
 				"name": "Kwik Bytes Special",
