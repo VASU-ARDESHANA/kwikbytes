@@ -18,7 +18,7 @@ export const whatsapp = {
 };
 
 export const sumitBhaiNumber = {
-	href: "tel:+9998799971",
+	href: "tel:+919998799971",
 	label: "99987 99971",
 };
 

@@ -71,17 +71,42 @@ import { Picture, Image } from "astro:assets";
                 is flexible and designed to please every palate.
             </p>
 
-            <h3>What We Serve</h3>
-            <ul>
-                <li><strong>Tea & Coffee</strong></li>
-                <li><strong>Milk Shakes & Lassi</strong></li>
-                <li><strong>Fries</strong></li>
-                <li><strong>Gujju Delight (Thepla)</strong></li>
-                <li><strong>Maggie</strong></li>
-                <li><strong>Sandwiches</strong></li>
-                <li><strong>The Paratha Patch</strong></li>
-                <li><strong>Sabji Junction</strong></li>
-            </ul>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                <div class="w-full max-w-sm mx-auto lg:mx-0">
+                    <div
+                        class="aspect-[3/4] rounded-xl overflow-hidden border bg-muted shadow-sm"
+                    >
+                        <iframe
+                            src="https://drive.google.com/file/d/1mqqlGDV4vxjIJvq0Kh8hPx4x1Uq3hsSZ/preview"
+                            class="w-full h-full"
+                            loading="lazy"
+                            allow="autoplay"></iframe>
+                    </div>
+
+                    <a
+                        href="https://drive.google.com/uc?export=download&id=1mqqlGDV4vxjIJvq0Kh8hPx4x1Uq3hsSZ"
+                        target="_blank"
+                        rel="noopener"
+                        class="mt-3 block w-full text-center rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-primary/90 transition"
+                    >
+                        Download Catering Menu (PDF)
+                    </a>
+                </div>
+
+                <div>
+                    <h3>What We Serve</h3>
+                    <ul class="mt-4">
+                        <li><strong>Tea & Coffee</strong></li>
+                        <li><strong>Milk Shakes & Lassi</strong></li>
+                        <li><strong>Fries</strong></li>
+                        <li><strong>Gujju Delight (Thepla)</strong></li>
+                        <li><strong>Maggie</strong></li>
+                        <li><strong>Sandwiches</strong></li>
+                        <li><strong>The Paratha Patch</strong></li>
+                        <li><strong>Sabji Junction</strong></li>
+                    </ul>
+                </div>
+            </div>
 
             <h3>Why Choose KwikBytes Catering?</h3>
             <ul>

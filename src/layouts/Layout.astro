@@ -3,21 +3,50 @@ import "~/styles/global.css";
 import { ClientRouter } from "astro:transitions";
 import Header from "~/components/Header.astro";
 import Footer from "~/components/Footer.astro";
-const { pageTitle, title, description } = Astro.props;
-const baseUrl = `${Astro.url.protocol}//${Astro.url.host}`;
 import { siteLang, themeColor } from "~/data/config";
----
 
+const { pageTitle } = Astro.props;
+const baseUrl = `${Astro.url.protocol}//${Astro.url.host}`;
+
+const business = {
+	name: "Kwik Bytes Cafe & Brahmani Catering",
+	pageTitle:
+		pageTitle ||
+		"Kwik Bytes Cafe & Brahmani Catering | Cafe & Catering in Subhanpura, Vadodara",
+	description:
+		"Kwik Bytes Cafe and Brahmani Catering in Subhanpura, Vadodara offering cafe food like Maggi, sandwiches, parathas, fries, shakes along with professional vegetarian catering services for weddings, parties and corporate events.",
+	keywords:
+		"Kwik Bytes Cafe, Brahmani Catering, cafe in Subhanpura Vadodara, catering services Vadodara, Maggi Vadodara, wedding catering Vadodara, event catering Gujarat",
+};
+---
 <!doctype html>
 <html lang={siteLang}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" href="src/assets/logo.png" />
+		<meta name="theme-color" content={themeColor} />
+
+		<!-- Primary SEO -->
+		<title>{business.pageTitle}</title>
+		<meta name="description" content={business.description} />
+		<meta name="keywords" content={business.keywords} />
+		<meta name="author" content={business.name} />
+
+		<!-- Local SEO -->
+		<meta name="geo.region" content="IN-GJ" />
+		<meta name="geo.placename" content="Vadodara" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={business.pageTitle} />
+		<meta property="og:description" content={business.description} />
+		<meta property="og:url" content={baseUrl} />
+		<meta property="og:image" content={`${baseUrl}/favicon.png`} />
+
 		<style is:global>
 			@import "swiper/css";
 		</style>
-		<title>{pageTitle}</title>
+
 		<ClientRouter />
 	</head>
 

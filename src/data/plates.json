@@ -111,7 +111,7 @@
 			{
 				"name": "Mayo Fries",
 				"description": "Fries topped with creamy mayonnaise",
-				"price": 60
+				"price": 65
 			},
 			{
 				"name": "Peri Peri Fries",
@@ -121,17 +121,17 @@
 			{
 				"name": "Cheesey Fries",
 				"description": "Fries loaded with melted cheese",
-				"price": 70
+				"price": 85
 			},
 			{
 				"name": "Maxican Fries",
 				"description": "Fries with Mexican spices and toppings",
-				"price": 70
+				"price": 100
 			},
 			{
 				"name": "Extra Dip Sauce",
 				"description": "Additional sauce of your choice",
-				"price": 10
+				"price": 25
 			}
 		]
 	},
@@ -145,42 +145,42 @@
 			{
 				"name": "Bread Butter",
 				"description": "Simple buttered bread slices",
-				"price": 60
+				"price": 25
 			},
 			{
 				"name": "Bread Jam",
 				"description": "Sweet jam spread on bread",
-				"price": 65
+				"price": 25
 			},
 			{
 				"name": "Chocolate Slice",
 				"description": "Bread with chocolate spread",
-				"price": 75
+				"price": 35
 			},
 			{
 				"name": "Cheese Chutny Sandwich",
 				"description": "Cheese and tangy chutney sandwich",
-				"price": 75
+				"price": 50
 			},
 			{
 				"name": "Veg Sandwich",
 				"description": "Fresh vegetable sandwich",
-				"price": 75
+				"price": 50
 			},
 			{
 				"name": "Veg Mayo Sandwich",
 				"description": "Vegetable sandwich with mayo",
-				"price": 90
+				"price": 60
 			},
 			{
 				"name": "Veg Cheese Sandwich",
 				"description": "Vegetable sandwich with cheese",
-				"price": 100
+				"price": 65
 			},
 			{
 				"name": "Veg Mayo Cheese Sandwich",
 				"description": "Vegetables with mayo and cheese",
-				"price": 100
+				"price": 75
 			}
 		]
 	},
@@ -359,72 +359,53 @@
 		"id": 9,
 		"slug": "paratha-patch",
 		"prettyName": "The Paratha Patch",
-		"description": "Stuffed Indian flatbreads cooked in oil or butter.",
-		"prettyLayout": "version",
-		"varieties": [
-			{
-				"name": "Oil",
-				"description": ""
-			},
-			{
-				"name": "Butter",
-				"description": ""
-			}
-		],
+		"description": "Stuffed Indian flatbread served with butter.",
+		"prettyLayout": "normal",
 		"plates": [
 			{
 				"name": "Aloo Paratha",
 				"description": "",
-				"price": 70,
-				"price2": 80
+				"price": 80
 			},
 			{
 				"name": "Onion Aloo Paratha",
 				"description": "",
-				"price": 75,
-				"price2": 85
+				"price": 85
 			},
 			{
 				"name": "Corn Capsicum Aloo Paratha",
 				"description": "",
-				"price": 85,
-				"price2": 95
+				"price": 95
 			},
 			{
 				"name": "Mix Veg Aloo Paratha",
 				"description": "",
-				"price": 90,
-				"price2": 100
+				"price": 100
 			},
 			{
 				"name": "Bikaneri Aloo Paratha",
 				"description": "",
-				"price": 90,
-				"price2": 100
+				"price": 100
 			},
 			{
 				"name": "Paneer Capsicum Aloo Paratha",
 				"description": "",
-				"price": 90,
-				"price2": 100
+				"price": 100
 			},
 			{
 				"name": "Cheese Aloo Paratha",
 				"description": "",
-				"price": 110,
-				"price2": 120
+				"price": 120
 			},
 			{
 				"name": "Cheese Capsicum Aloo Paratha",
 				"description": "",
-				"price": 115,
-				"price2": 125
+				"price": 125
 			},
 			{
 				"name": "Kwik Bytes Special",
 				"description": "",
-				"price": 150,
-				"price2": 150
+				"price": 150
 			}
 		]
 	},
@@ -437,7 +418,7 @@
 		"varieties": [
 			{
 				"name": "Sabji with Paratha/Bhakri",
-				"description": "(3 parathas/2 bhakris)"
+				"description": "(3 parathas / 2 bhakris)"
 			}
 		],
 		"plates": [
@@ -536,7 +517,7 @@
 	{
 		"id": 11,
 		"slug": "kwik-bytes-spl",
-		"prettyName": "Kwik Bytes Spice ",
+		"prettyName": "Kwik Bytes Spice",
 		"description": "Signature specials from Kwik Bytes you must try.",
 		"prettyLayout": "normal",
 		"plates": [
