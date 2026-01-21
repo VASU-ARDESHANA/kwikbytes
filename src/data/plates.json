@@ -106,27 +106,27 @@
 			{
 				"name": "Salted Fries",
 				"description": "Classic crispy fries with salt",
-				"price": 50
+				"price": 60
 			},
 			{
 				"name": "Mayo Fries",
 				"description": "Fries topped with creamy mayonnaise",
-				"price": 65
+				"price": 75
 			},
 			{
 				"name": "Peri Peri Fries",
 				"description": "Spicy peri peri seasoned fries",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Cheesey Fries",
 				"description": "Fries loaded with melted cheese",
-				"price": 85
+				"price": 95
 			},
 			{
 				"name": "Maxican Fries",
 				"description": "Fries with Mexican spices and toppings",
-				"price": 100
+				"price": 110
 			},
 			{
 				"name": "Extra Dip Sauce",
@@ -204,56 +204,56 @@
 			{
 				"name": "Veg Grill",
 				"description": "",
-				"price": 60,
-				"price2": 80
+				"price": 70,
+				"price2": 90
 			},
 			{
 				"name": "Veg Mayo Grill",
 				"description": "",
-				"price": 65,
-				"price2": 85
+				"price": 75,
+				"price2": 95
 			},
 			{
 				"name": "Veg Cheese Grill",
 				"description": "",
-				"price": 75,
-				"price2": 95
+				"price": 85,
+				"price2": 105
 			},
 			{
 				"name": "Veg Mayo Cheese Grill",
 				"description": "",
-				"price": 75,
-				"price2": 95
+				"price": 85,
+				"price2": 105
 			},
 			{
 				"name": "Veg Mayo Chilly Corn",
 				"description": "",
-				"price": 75,
-				"price2": 95
+				"price": 85,
+				"price2": 105
 			},
 			{
 				"name": "Vibrant Veggie Grill",
 				"description": "",
-				"price": 90,
-				"price2": 120
+				"price": 100,
+				"price2": 130
 			},
 			{
 				"name": "Paneer Paradise",
 				"description": "",
-				"price": 100,
-				"price2": 130
+				"price": 110,
+				"price2": 140
 			},
 			{
 				"name": "The Double Delight Grill",
 				"description": "",
-				"price": 100,
-				"price2": 130
+				"price": 110,
+				"price2": 140
 			},
 			{
-				"name": "Kwik Bytes Spice Fusion Sandwich",
+				"name": "Kwik Bytes Spice Fusion Sandwich (3 Layers only)",
 				"description": "Our signature spicy fusion sandwich",
-				"price": 150,
-				"price2": 150
+				"price": 170,
+				"price2": 170
 			}
 		]
 	},
@@ -267,42 +267,42 @@
 			{
 				"name": "Classic Maggi",
 				"description": "Traditional Maggi noodles",
-				"price": 50
+				"price": 60
 			},
 			{
 				"name": "Double Masala Maggi",
 				"description": "Extra spicy masala Maggi",
-				"price": 60
+				"price": 70
 			},
 			{
 				"name": "Butter Double Masala Maggi",
 				"description": "Buttery masala Maggi",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Veg Masala Maggi",
 				"description": "Maggi with fresh vegetables",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Schezwan Maggi",
 				"description": "Spicy Schezwan-style Maggi",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Garlic Tadka Maggi",
 				"description": "Maggi with aromatic garlic tempering",
-				"price": 80
+				"price": 90
 			},
 			{
 				"name": "Veg Cheese Double Masala Maggi",
 				"description": "Cheesy vegetable masala Maggi",
-				"price": 95
+				"price": 105
 			},
 			{
 				"name": "Kwik Bytes Special Maggi",
 				"description": "Our chef's special Maggi creation",
-				"price": 100
+				"price": 120
 			}
 		]
 	},
@@ -316,37 +316,37 @@
 			{
 				"name": "Methi Thepla (2 pcs)",
 				"description": "Classic fenugreek flatbread",
-				"price": 30
+				"price": 40
 			},
 			{
 				"name": "Methi Thepla with Curd",
 				"description": "Thepla served with fresh yogurt",
-				"price": 40
+				"price": 50
 			},
 			{
 				"name": "Butter Methi Thepla",
 				"description": "Buttery fenugreek thepla",
-				"price": 40
+				"price": 50
 			},
 			{
 				"name": "Sev Methi Thepla",
 				"description": "Thepla topped with crispy sev",
-				"price": 50
+				"price": 60
 			},
 			{
 				"name": "Schezwan Methi Thepla",
 				"description": "Spicy Schezwan-flavored thepla",
-				"price": 50
+				"price": 60
 			},
 			{
 				"name": "Mexican Methi Thepla",
 				"description": "Thepla with Mexican spices",
-				"price": 60
+				"price": 70
 			},
 			{
 				"name": "Cheese Methi Thepla",
 				"description": "Thepla with melted cheese",
-				"price": 60
+				"price": 70
 			},
 			{
 				"name": "Extra Curd",
@@ -365,47 +365,47 @@
 			{
 				"name": "Aloo Paratha",
 				"description": "",
-				"price": 80
+				"price": 90
 			},
 			{
 				"name": "Onion Aloo Paratha",
 				"description": "",
-				"price": 85
+				"price": 95
 			},
 			{
 				"name": "Corn Capsicum Aloo Paratha",
 				"description": "",
-				"price": 95
+				"price": 105
 			},
 			{
 				"name": "Mix Veg Aloo Paratha",
 				"description": "",
-				"price": 100
+				"price": 110
 			},
 			{
 				"name": "Bikaneri Aloo Paratha",
 				"description": "",
-				"price": 100
+				"price": 110
 			},
 			{
 				"name": "Paneer Capsicum Aloo Paratha",
 				"description": "",
-				"price": 100
+				"price": 110
 			},
 			{
 				"name": "Cheese Aloo Paratha",
 				"description": "",
-				"price": 120
+				"price": 130
 			},
 			{
 				"name": "Cheese Capsicum Aloo Paratha",
 				"description": "",
-				"price": 125
+				"price": 135
 			},
 			{
 				"name": "Kwik Bytes Special",
 				"description": "",
-				"price": 150
+				"price": 170
 			}
 		]
 	},
@@ -425,92 +425,92 @@
 			{
 				"name": "Aloo Suki Bhaji",
 				"description": "",
-				"price": 60
+				"price": 70
 			},
 			{
 				"name": "Lasaniya Bateka",
 				"description": "",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Sev Tameta",
 				"description": "",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Sev Dungri",
 				"description": "",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Chana Masala",
 				"description": "",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Mag Masala",
 				"description": "",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Sing Bhajiya Sabji",
 				"description": "",
-				"price": 70
+				"price": 80
 			},
 			{
 				"name": "Mag Paneer Masala",
 				"description": "",
-				"price": 85
+				"price": 95
 			},
 			{
 				"name": "Dahi Tikhari",
 				"description": "",
-				"price": 60
+				"price": 80
 			},
 			{
 				"name": "Punjabi Cholle",
 				"description": "",
-				"price": 80
+				"price": 90
 			},
 			{
 				"name": "Rajma",
 				"description": "",
-				"price": 80
+				"price": 90
 			},
 			{
 				"name": "Paneer Sabji",
 				"description": "",
-				"price": 90
+				"price": 100
 			},
 			{
 				"name": "Kaju Gathiya",
 				"description": "",
-				"price": 100
+				"price": 110
 			},
 			{
 				"name": "Kaju Paneer",
 				"description": "",
-				"price": 110
+				"price": 120
 			},
 			{
 				"name": "Cheese Butter Masala",
 				"description": "",
-				"price": 120
+				"price": 130
 			},
 			{
 				"name": "Kwik Bytes Spl. Sabji",
 				"description": "Our special house curry",
-				"price": 130
+				"price": 150
 			},
 			{
 				"name": "Extra Paratha",
 				"description": "Plain flatbread",
-				"price": 10
+				"price": 15
 			},
 			{
 				"name": "Extra Bhakri",
 				"description": "Traditional millet flatbread",
-				"price": 15
+				"price": 20
 			}
 		]
 	},
@@ -524,22 +524,22 @@
 			{
 				"name": "Kwik Bytes Spice Fusion Sandwich",
 				"description": "Our signature spicy fusion sandwich",
-				"price": 150
+				"price": 170
 			},
 			{
 				"name": "Kwik Bytes Special Maggi",
 				"description": "Our chef's special Maggi creation",
-				"price": 100
+				"price": 120
 			},
 			{
-				"name": "Kwik Bytes Special",
+				"name": "Kwik Bytes Special paratha",
 				"description": "Special stuffed paratha",
-				"price": 150
+				"price": 170
 			},
 			{
 				"name": "Kwik Bytes Spl. Sabji",
 				"description": "Our special house curry",
-				"price": 130
+				"price": 150
 			}
 		]
 	}
