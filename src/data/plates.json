@@ -5,7 +5,7 @@
 		"prettyName": "Tea & Coffee",
 		"description": "Hot and refreshing beverages to kickstart your day.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/tea.jpeg",
+		"background": "/background/tea.jpeg",
 		"plates": [
 			{
 				"name": "Masala Tea",
@@ -45,7 +45,7 @@
 		"prettyName": "Milk Shakes",
 		"description": "Thick and creamy milkshakes in classic flavors.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/MilkShakes.jpeg",
+		"background": "/background/MilkShakes.jpeg",
 		"plates": [
 			{
 				"name": "Strawberry Shake",
@@ -70,7 +70,7 @@
 		"prettyName": "Lassi",
 		"description": "Traditional yogurt-based refreshing drinks.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Lassi.jpg",
+		"background": "/background/Lassi.jpg",
 		"plates": [
 			{
 				"name": "Butter Milk",
@@ -105,7 +105,7 @@
 		"prettyName": "Fries",
 		"description": "Crispy golden fries with various toppings and seasonings.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Fries.jpeg",
+		"background": "/background/Fries.jpeg",
 		"plates": [
 			{
 				"name": "Salted Fries",
@@ -145,7 +145,7 @@
 		"prettyName": "Sandwiches",
 		"description": "Fresh vegetable sandwiches with various spreads and layers.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Sandwiches.jpg",
+		"background": "/background/Sandwiches.jpg",
 		"plates": [
 			{
 				"name": "Bread Butter",
@@ -195,7 +195,7 @@
 		"prettyName": "Grill Sandwiches",
 		"description": "Hot pressed and grilled sandwiches available in regular or jumbo sizes.",
 		"prettyLayout": "version",
-		"background": "/src/assets/background/Sandwiches.jpg",
+		"background": "/background/Sandwiches.jpg",
 		"varieties": [
 			{
 				"name": "Regular",
@@ -269,7 +269,7 @@
 		"prettyName": "Maggi",
 		"description": "Classic instant noodles with various flavorful preparations.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Maggi.jpeg",
+		"background": "/background/Maggi.jpeg",
 		"plates": [
 			{
 				"name": "Classic Maggi",
@@ -319,7 +319,7 @@
 		"prettyName": "Gujju Delight (Thepla)",
 		"description": "Traditional Gujarati flatbreads with various toppings and flavors.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Thepla.jpg",
+		"background": "/background/Thepla.jpg",
 		"plates": [
 			{
 				"name": "Methi Thepla (2 pcs)",
@@ -369,7 +369,7 @@
 		"prettyName": "The Paratha Patch",
 		"description": "Stuffed Indian flatbread served with butter.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Paratha.jpg",
+		"background": "/background/Paratha.jpg",
 		"plates": [
 			{
 				"name": "Aloo Paratha",
@@ -424,7 +424,7 @@
 		"prettyName": "Sabji Junction",
 		"description": "Traditional Indian curries served with paratha or bhakri.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/Sabji.jpg",
+		"background": "/background/Sabji.jpg",
 		"varieties": [
 			{
 				"name": "Sabji with Paratha/Bhakri",
@@ -530,7 +530,7 @@
 		"prettyName": "Kwik Bytes Spice",
 		"description": "Signature specials from Kwik Bytes you must try.",
 		"prettyLayout": "normal",
-		"background": "/src/assets/background/black.jpg",
+		"background": "/background/black.jpg",
 		"plates": [
 			{
 				"name": "Kwik Bytes Spice Fusion Sandwich",
