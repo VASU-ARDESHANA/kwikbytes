@@ -35,7 +35,7 @@
 			{
 				"name": "Hot Chocolate",
 				"description": "Rich and comforting chocolate beverage",
-				"price": 60
+				"price": 75
 			}
 		]
 	},
@@ -90,12 +90,12 @@
 			{
 				"name": "Mango Lassi",
 				"description": "Creamy mango-flavored lassi",
-				"price": 40
+				"price": 45
 			},
 			{
 				"name": "Butterscotch Lassi",
 				"description": "Sweet lassi with butterscotch flavor",
-				"price": 45
+				"price": 50
 			}
 		]
 	},
@@ -150,22 +150,22 @@
 			{
 				"name": "Bread Butter",
 				"description": "Simple buttered bread slices",
-				"price": 25
+				"price": 30
 			},
 			{
 				"name": "Bread Jam",
 				"description": "Sweet jam spread on bread",
-				"price": 25
+				"price": 30
 			},
 			{
 				"name": "Chocolate Slice",
 				"description": "Bread with chocolate spread",
-				"price": 35
+				"price": 50
 			},
 			{
-				"name": "Cheese Chutny Sandwich",
-				"description": "Cheese and tangy chutney sandwich",
-				"price": 50
+				"name": "Cheese Chatni Sandwich",
+				"description": "Cheese and tangy Chatni sandwich",
+				"price": 60
 			},
 			{
 				"name": "Veg Sandwich",
@@ -359,7 +359,7 @@
 			{
 				"name": "Extra Curd",
 				"description": "Additional serving of yogurt",
-				"price": 10
+				"price": 15
 			}
 		]
 	},
@@ -458,7 +458,7 @@
 				"price": 80
 			},
 			{
-				"name": "Mag Masala",
+				"name": "Aloo Matar",
 				"description": "",
 				"price": 80
 			},
@@ -466,11 +466,6 @@
 				"name": "Sing Bhajiya Sabji",
 				"description": "",
 				"price": 80
-			},
-			{
-				"name": "Mag Paneer Masala",
-				"description": "",
-				"price": 95
 			},
 			{
 				"name": "Dahi Tikhari",
@@ -501,6 +496,11 @@
 				"name": "Kaju Paneer",
 				"description": "",
 				"price": 120
+			},
+			{
+				"name": "Paneer Bhurji",
+				"description": "",
+				"price": 130
 			},
 			{
 				"name": "Cheese Butter Masala",
