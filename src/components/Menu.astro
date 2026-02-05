@@ -53,26 +53,6 @@ const bgStyle = (background?: any) =>
 				</div>
 				{plate.data.varieties &&
 					plate.data.varieties.length > 0 &&
-					plate.data.prettyLayout === "version" && (
-						<div class="max-w-5xl mx-auto -mt-8 mb-8">
-							<div class="flex justify-end gap-4 sm:gap-8 lg:gap-12">
-								{plate.data.varieties.map((variety) => (
-									<div class="text-right min-w-[70px] sm:min-w-[80px]">
-										<h6 class="font-bold text-base sm:text-lg lg:text-xl text-brand-green/70">
-											{variety.name}
-										</h6>
-										{variety.description && (
-											<p class="text-gray-600 text-xs sm:text-sm">
-												{variety.description}
-											</p>
-										)}
-									</div>
-								))}
-							</div>
-						</div>
-					)}
-				{plate.data.varieties &&
-					plate.data.varieties.length > 0 &&
 					plate.data.prettyLayout === "normal" && (
 						<div class="max-w-5xl mx-auto mb-8">
 							<div class="flex justify-center gap-4 sm:gap-8 lg:gap-12">
@@ -96,9 +76,29 @@ const bgStyle = (background?: any) =>
 							class="max-w-5xl mx-auto mb-8 relative overflow-hidden rounded-[20px]"
 							style={bgStyle(plate.data.background)}
 						>
-							<div class="absolute inset-0 rounded-[20px]" />
 
 							<div class="relative z-10 p-6 sm:p-8">
+								{plate.data.varieties &&
+									plate.data.varieties.length > 0 && (
+										<div class="flex justify-end gap-4 sm:gap-8 lg:gap-12 mb-6">
+											{plate.data.varieties.map(
+												(variety) => (
+													<div class="text-right min-w-[70px] sm:min-w-[80px]">
+														<h6 class="font-bold text-base sm:text-lg lg:text-xl text-white">
+															{variety.name}
+														</h6>
+														{variety.description && (
+															<p class="text-white/80 text-xs sm:text-sm">
+																{
+																	variety.description
+																}
+															</p>
+														)}
+													</div>
+												),
+											)}
+										</div>
+									)}
 								<div class="grid grid-cols-1 gap-4 sm:gap-6">
 									{plate.data.plates.map((item) => (
 										<div>
