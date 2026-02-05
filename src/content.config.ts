@@ -3,32 +3,33 @@ import { file } from "astro/loaders";
 
 const plates = defineCollection({
 	loader: file("src/data/plates.json"),
-	schema: z.object({
-		slug: z.string(),
-		prettyName: z.string(),
-		description: z.string(),
-		prettyLayout: z.enum(["normal", "version"]).default("normal"),
+	schema: ({ image }) =>
+		z.object({
+			slug: z.string(),
+			prettyName: z.string(),
+			description: z.string(),
+			prettyLayout: z.enum(["normal", "version"]).default("normal"),
 
-		background: z.string().optional(),
+			background: image().optional(),
 
-		varieties: z
-			.array(
+			varieties: z
+				.array(
+					z.object({
+						name: z.string(),
+						description: z.string(),
+					})
+				)
+				.optional(),
+
+			plates: z.array(
 				z.object({
 					name: z.string(),
 					description: z.string(),
+					price: z.number(),
+					price2: z.number().optional(),
 				})
-			)
-			.optional(),
-
-		plates: z.array(
-			z.object({
-				name: z.string(),
-				description: z.string(),
-				price: z.number(),
-				price2: z.number().optional(),
-			})
-		),
-	}),
+			),
+		}),
 });
 
 const reviews = defineCollection({

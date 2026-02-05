@@ -6,9 +6,9 @@ import type { CollectionEntry } from "astro:content";
 const plates = await getCollection("plates");
 const siteLangFormat = siteLang.replace("_", "-");
 
-const bgStyle = (background?: string) =>
+const bgStyle = (background?: any) =>
 	background
-		? `background-image: url(${background});
+		? `background-image: url(${background.src});
 		   background-size: cover;
 		   background-position: center;
 		   background-repeat: no-repeat;
