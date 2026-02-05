@@ -8,12 +8,18 @@ const plates = defineCollection({
 		prettyName: z.string(),
 		description: z.string(),
 		prettyLayout: z.enum(["normal", "version"]).default("normal"),
-		varieties: z.array(
-			z.object({
-				name: z.string(),
-				description: z.string(),
-			})
-		).optional(),
+
+		background: z.string().optional(),
+
+		varieties: z
+			.array(
+				z.object({
+					name: z.string(),
+					description: z.string(),
+				})
+			)
+			.optional(),
+
 		plates: z.array(
 			z.object({
 				name: z.string(),

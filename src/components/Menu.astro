@@ -1,8 +1,20 @@
 ---
 import { getCollection } from "astro:content";
 import { siteLang, siteCurrency } from "~/data/config";
+import type { CollectionEntry } from "astro:content";
+
 const plates = await getCollection("plates");
 const siteLangFormat = siteLang.replace("_", "-");
+
+const bgStyle = (background?: string) =>
+	background
+		? `background-image: url(${background});
+		   background-size: cover;
+		   background-position: center;
+		   background-repeat: no-repeat;
+		   padding: 2rem;
+		   border-radius: 20px;`
+		: "";
 ---
 
 <div id="plate-nav-wrapper" class="mb-20 sticky top-8 z-10">
@@ -27,7 +39,7 @@ const siteLangFormat = siteLang.replace("_", "-");
 	</nav>
 </div>
 
-<div class="grid grid-cols-1 gap-y-16">
+<div class="grid grid-cols-1 gap-y-5">
 	{
 		plates.map((plate) => (
 			<div
@@ -35,115 +47,153 @@ const siteLangFormat = siteLang.replace("_", "-");
 				class="space-y-16 scroll-mt-10"
 				data-category-section={plate.data.slug}
 			>
-				<div class="flex flex-col items-center gap-2 max-w-lg mx-auto text-balance text-center" style="margin-bottom: 40;">
-					<h3 class="h4 text-brand-green">
-						{plate.data.prettyName}
-					</h3>
+				<div class="flex flex-col items-center gap-2 max-w-lg mx-auto text-balance text-center">
+					<h3 class="h4 text-brand-green">{plate.data.prettyName}</h3>
 					<p>{plate.data.description}</p>
 				</div>
-				{plate.data.varieties && plate.data.varieties.length > 0 && plate.data.prettyLayout === "version" && (
-					<div class="max-w-5xl mx-auto -mt-8 mb-8">
-						<div class="flex justify-end gap-4 sm:gap-8 lg:gap-12">
-							{plate.data.varieties.map((variety) => (
-								<div class="text-right min-w-[70px] sm:min-w-[80px]">
-									<h6 class="font-bold text-base sm:text-lg lg:text-xl text-brand-green/70">
-										{variety.name}
-									</h6>
-									{variety.description && (
-										<p class="text-gray-600 text-xs sm:text-sm">
+				{plate.data.varieties &&
+					plate.data.varieties.length > 0 &&
+					plate.data.prettyLayout === "version" && (
+						<div class="max-w-5xl mx-auto -mt-8 mb-8">
+							<div class="flex justify-end gap-4 sm:gap-8 lg:gap-12">
+								{plate.data.varieties.map((variety) => (
+									<div class="text-right min-w-[70px] sm:min-w-[80px]">
+										<h6 class="font-bold text-base sm:text-lg lg:text-xl text-brand-green/70">
+											{variety.name}
+										</h6>
+										{variety.description && (
+											<p class="text-gray-600 text-xs sm:text-sm">
+												{variety.description}
+											</p>
+										)}
+									</div>
+								))}
+							</div>
+						</div>
+					)}
+				{plate.data.varieties &&
+					plate.data.varieties.length > 0 &&
+					plate.data.prettyLayout === "normal" && (
+						<div class="max-w-5xl mx-auto mb-8">
+							<div class="flex justify-center gap-4 sm:gap-8 lg:gap-12">
+								{plate.data.varieties.map((variety) => (
+									<div class="text-center">
+										<h5 class="font-bold text-xl text-brand-green/70">
+											{variety.name}
+										</h5>
+										<p class="text-gray-600">
 											{variety.description}
 										</p>
-									)}
-								</div>
-							))}
+									</div>
+								))}
+							</div>
 						</div>
-					</div>
-				)}
-				{plate.data.varieties && plate.data.varieties.length > 0 && plate.data.prettyLayout === "normal" && (
-					<div class="max-w-5xl mx-auto mb-8">
-						<div class="flex justify-center gap-4 sm:gap-8 lg:gap-12">
-							{plate.data.varieties.map((variety) => (
-								<div class="text-center">
-									<h5 class="font-bold text-xl text-brand-green/70">
-										{variety.name}
-									</h5>
-									<p class="text-gray-600">
-										{variety.description}
-									</p>
-								</div>
-							))}
-						</div>
-					</div>
-				)}
+					)}
 
 				<dl class="max-w-5xl mx-auto">
 					{plate.data.prettyLayout === "version" ? (
-						<div class="grid grid-cols-1 gap-4 sm:gap-6">
-							{plate.data.plates.map((item) => (
-								<div>
-									<dt>
-										<div class="flex justify-between items-center gap-2 sm:gap-4">
-											<span class="font-bold text-lg sm:text-xl lg:text-2xl tracking-wide flex-1">
-												{item.name}
-											</span>
-											<div class="flex gap-4 sm:gap-8 lg:gap-12">
-												<span class="font-medium text-base sm:text-lg min-w-[70px] sm:min-w-[80px] text-right">
-													{new Intl.NumberFormat(siteLang, {
-														style: "currency",
-														currency: siteCurrency,
-														minimumFractionDigits: 0,
-														maximumFractionDigits: 0,
-													}).format(item.price)}
-												</span>
-												{item.price2 && (
-													<span class="font-medium text-base sm:text-lg min-w-[70px] sm:min-w-[80px] text-right">
-														{new Intl.NumberFormat(siteLang, {
-															style: "currency",
-															currency: siteCurrency,
-															minimumFractionDigits: 0,
-															maximumFractionDigits: 0,
-														}).format(item.price2)}
+						<div
+							class="max-w-5xl mx-auto mb-8 relative overflow-hidden rounded-[20px]"
+							style={bgStyle(plate.data.background)}
+						>
+							<div class="absolute inset-0 rounded-[20px]" />
+
+							<div class="relative z-10 p-6 sm:p-8">
+								<div class="grid grid-cols-1 gap-4 sm:gap-6">
+									{plate.data.plates.map((item) => (
+										<div>
+											<dt>
+												<div class="flex justify-between items-center gap-2 sm:gap-4">
+													<span class="font-bold text-lg sm:text-xl lg:text-2xl tracking-wide flex-1 text-white">
+														{item.name}
 													</span>
-												)}
-											</div>
+
+													<div class="flex gap-4 sm:gap-8 lg:gap-12">
+														<span class="font-medium text-base sm:text-lg min-w-[70px] sm:min-w-[80px] text-right text-white">
+															{new Intl.NumberFormat(
+																siteLang,
+																{
+																	style: "currency",
+																	currency:
+																		siteCurrency,
+																	minimumFractionDigits: 0,
+																	maximumFractionDigits: 0,
+																},
+															).format(
+																item.price,
+															)}
+														</span>
+
+														{item.price2 && (
+															<span class="font-medium text-base sm:text-lg min-w-[70px] sm:min-w-[80px] text-right text-white">
+																{new Intl.NumberFormat(
+																	siteLang,
+																	{
+																		style: "currency",
+																		currency:
+																			siteCurrency,
+																		minimumFractionDigits: 0,
+																		maximumFractionDigits: 0,
+																	},
+																).format(
+																	item.price2,
+																)}
+															</span>
+														)}
+													</div>
+												</div>
+											</dt>
+
+											{item.description && (
+												<dd>
+													<p class="mt-2 text-white/90 tracking-wide leading-normal text-balance">
+														{item.description}
+													</p>
+												</dd>
+											)}
 										</div>
-									</dt>
-									{item.description && (
-										<dd>
-											<p class="mt-2 text-gray-500 tracking-wide leading-normal text-balance">
-												{item.description}
-											</p>
-										</dd>
-									)}
+									))}
 								</div>
-							))}
+							</div>
 						</div>
 					) : (
-						<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-16 xl:gap-x-32">
-							{plate.data.plates.map((item) => (
-								<div>
-									<dt>
-										<div class="flex justify-between items-center">
-											<span class="font-bold text-2xl tracking-wide">
-												{item.name}
-											</span>
-											<span class="font-medium text-lg">
-												{new Intl.NumberFormat(siteLang, {
-													style: "currency",
-													currency: siteCurrency,
-													minimumFractionDigits: 0,
-													maximumFractionDigits: 0,
-												}).format(item.price)}{" "}
-											</span>
-										</div>
-									</dt>
-									<dd>
-										<p class="mt-2 text-gray-500 tracking-wide leading-normal text-balance">
-											{item.description}
-										</p>
-									</dd>
-								</div>
-							))}
+						<div
+							class="max-w-5xl mx-auto mb-8"
+							style={bgStyle(plate.data.background)}
+						>
+							<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-x-16 xl:gap-x-32">
+								{plate.data.plates.map((item) => (
+									<div>
+										<dt>
+											<div class="flex justify-between items-center">
+												<span class="font-bold text-2xl tracking-wide text-white">
+													{item.name}
+												</span>
+												<span class="font-medium text-lg text-white">
+													{new Intl.NumberFormat(
+														siteLang,
+														{
+															style: "currency",
+															currency:
+																siteCurrency,
+															minimumFractionDigits: 0,
+															maximumFractionDigits: 0,
+														},
+													).format(item.price)}
+												</span>
+											</div>
+										</dt>
+
+										{item.description && (
+											<dd>
+												<p class="mt-2 text-white/90 tracking-wide leading-normal text-balance">
+													{item.description}
+												</p>
+											</dd>
+										)}
+									</div>
+								))}
+							</div>
 						</div>
 					)}
 				</dl>
