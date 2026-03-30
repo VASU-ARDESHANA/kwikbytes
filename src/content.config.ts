@@ -1,0 +1,55 @@
+import { z, defineCollection } from "astro:content";
+import { file } from "astro/loaders";
+
+const plates = defineCollection({
+	loader: file("src/data/plates.json"),
+	schema: ({ image }) =>
+		z.object({
+			slug: z.string(),
+			prettyName: z.string(),
+			description: z.string(),
+			prettyLayout: z.enum(["normal", "version"]).default("normal"),
+
+			background: image().optional(),
+
+			varieties: z
+				.array(
+					z.object({
+						name: z.string(),
+						description: z.string(),
+					})
+				)
+				.optional(),
+
+			plates: z.array(
+				z.object({
+					name: z.string(),
+					description: z.string().optional(),
+					price: z.number(),
+					price2: z.number().optional(),
+					image: image().optional(),
+				})
+			),
+		}),
+});
+
+const reviews = defineCollection({
+	loader: file("src/data/reviews.json"),
+	schema: z.object({
+		author: z.string(),
+		review: z.string(),
+		rating: z.number().optional().default(5),
+	}),
+});
+
+const gallery = defineCollection({
+	loader: file("src/data/gallery.json"),
+	schema: ({ image }) =>
+		z.object({
+			title: z.string(),
+			alt: z.string(),
+			image: image(),
+		}),
+});
+
+export const collections = { plates, reviews, gallery };

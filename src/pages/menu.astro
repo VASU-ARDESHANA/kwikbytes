@@ -1,0 +1,20 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Heading from "~/components/Heading.astro";
+import MenuList from "~/components/Menu.astro";
+---
+
+<Layout title="Our menu" pageTitle="Menu" description="Welcome to our restaurant!">
+	<Section>
+		<div class="text-center max-w-3xl mx-auto mb-16 mt-8">
+			<h1 class="font-black text-brand-green text-5xl lg:text-7xl tracking-tight mb-6">Culinary <span class="text-brand-orange">Delights</span></h1>
+			<p class="text-xl text-gray-500 font-medium">
+				Explore our carefully curated menu featuring beloved classics and signature creations prepared fresh daily.
+			</p>
+			<div class="h-1 w-20 bg-brand-orange mx-auto mt-8 rounded-full"></div>
+		</div>
+
+		<MenuList />
+	</Section>
+</Layout>

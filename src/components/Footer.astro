@@ -1,0 +1,62 @@
+---
+import { menuMain } from "~/data/menus";
+const currentYear = new Date().getFullYear();
+import { siteName, hours, developerSiteDomain } from "~/data/config";
+---
+
+<footer class="bg-gradient-to-b from-brand-green to-teal-950 text-teal-100 border-t-4 border-brand-orange relative overflow-hidden">
+	<div class="container relative z-10 pt-20 pb-12">
+		<div class="text-center mb-10">
+			<p class="font-black text-5xl text-white tracking-tight drop-shadow-md">Kwik <span class="text-brand-orange">Bytes</span></p>
+			<p class="mt-4 text-teal-200/90 font-medium text-lg max-w-md mx-auto">Cafe flavors you crave, professional catering you can trust.</p>
+		</div>
+		
+		<nav class="flex flex-wrap items-center justify-center gap-x-10 gap-y-4 font-bold text-lg mb-12 tracking-wide" aria-label="Footer">
+			{
+				menuMain.map((item) => (
+					<a
+						href={item.url}
+						class="text-white hover:text-brand-orange transition-colors duration-200 hover:-translate-y-0.5 transform uppercase text-sm"
+					>
+						{item.name}
+					</a>
+				))
+			}
+		</nav>
+		
+		<div class="bg-teal-900/40 rounded-3xl p-8 max-w-3xl mx-auto backdrop-blur-md border border-teal-800/60 shadow-inner mb-16">
+			<div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-center md:text-left text-white">
+				<div class="flex-1">
+					<p class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-2 flex items-center justify-center md:justify-start gap-2">
+						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+						Opening Hours
+					</p>
+					<p class="font-semibold text-lg text-teal-50">Mon – Sat: <span class="text-teal-200 font-medium ml-1">{hours.monday}</span></p>
+					<p class="font-semibold text-lg text-teal-50 mt-1">Sunday: <span class="text-teal-200 font-medium ml-1">{hours.sunday}</span></p>
+				</div>
+				<div class="h-16 w-px bg-teal-800/80 hidden md:block"></div>
+				<div class="flex-1">
+					<p class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-2 flex items-center justify-center md:justify-start gap-2">
+						<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+						Location
+					</p>
+					<a href="https://maps.app.goo.gl/zJc1TqVVjsG1aqPh9" target="_blank" rel="noopener noreferrer" class="font-medium text-xl text-teal-50 hover:text-brand-orange transition-all block w-full text-center md:text-left">
+						Subhanpura, Vadodara
+					</a>
+					<p class="text-teal-300 text-sm mt-1">Dine in • Takeaway • Catering</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="border-t border-teal-800/80 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+			<p class="text-sm text-teal-300 font-medium">
+				&copy; {currentYear} {siteName}. All rights reserved.
+			</p>
+			<div class="text-sm text-teal-300 font-medium flex items-center gap-4">
+				<span>Designed by <a class="text-brand-orange hover:text-white transition-colors" target="_blank" href={`https://${developerSiteDomain}`}>Vasu Ardeshana</a></span>
+				<span class="w-1 h-1 rounded-full bg-teal-600"></span>
+				<a class="text-teal-300 hover:text-white transition-colors" target="_blank" href="http://github.com/vasU-ARDESHANA/kwikbytes/">GitHub Repo</a>
+			</div>
+		</div>
+	</div>
+</footer>

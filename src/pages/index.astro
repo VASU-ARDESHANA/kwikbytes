@@ -1,0 +1,183 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ReviewSlider from "~/components/ReviewSlider.astro";
+import Logo from "~/assets/logo.png";
+import AuthImage from "~/assets/authenticity.jpg";
+import { Picture, Image } from "astro:assets";
+import { loadRenderers } from "astro:container";
+---
+
+<Layout
+	title="KwikBytes"
+	pageTitle="KwikBytes"
+	description="KwikBytes – authentic food, bold flavors. Our website is under construction, but the menu is ready to explore."
+>
+	<div class="relative overflow-hidden">
+		<div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-50 via-white to-orange-50"></div>
+		<div class="absolute top-0 right-0 -z-10 w-96 h-96 bg-brand-green/20 rounded-full blur-3xl opacity-60 mix-blend-multiply animate-pulse"></div>
+		<div class="absolute bottom-0 left-0 -z-10 w-96 h-96 bg-brand-orange/20 rounded-full blur-3xl opacity-60 mix-blend-multiply animate-pulse" style="animation-delay: 2s;"></div>
+		
+		<Section class:list={"bg-transparent relative z-10"}>
+		<Hero>
+			<div
+				slot="hero-content-left"
+				class="prose max-w-none max-lg:order-1 relative"
+			>
+				<Badge title="Kwik Bytes" color="orange" />
+				<h1 class="font-black text-5xl lg:text-7xl tracking-[-0.04em] leading-[1.1] mb-6">
+					A Taste of <br/>
+					<span class="text-gradient-brand drop-shadow-sm inline-block w-fit">Tradition & Flavor</span>
+				</h1>
+
+				<p class="text-xl lg:text-2xl text-gray-600 font-medium leading-relaxed max-w-xl">
+					Experience the vibrant taste of Vadodara at Kwik Bytes! From mouth-watering cafe classics like cheesy Maggi and rich shakes, to our premier Brahmani Catering services.
+				</p>
+
+				<p class="text-base text-gray-500 font-semibold uppercase tracking-widest mt-6">
+					Dine in • Takeaway • Catering • Party Orders
+				</p>
+				<div class="mt-8 flex items-center gap-x-8">
+					<Button url="/menu">See our menu</Button>
+				</div>
+			</div>
+			<div slot="hero-content-right" class="relative">
+				<div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/20 to-brand-green/20 rounded-full blur-3xl -z-10 transform scale-75 animate-pulse transition-all duration-1000"></div>
+				<Picture
+					class:list={"mx-auto animate-float drop-shadow-2xl"}
+					src={Logo}
+					height={600}
+					formats={["avif", "webp"]}
+					alt="A description of my image."
+					loading={"eager"}
+					fetchpriority={"high"}
+				/>
+			</div>
+		</Hero>
+	</Section>
+	</div>
+
+	<!-- Features Section -->
+	<Section class:list={"bg-white relative z-20"}>
+		<div class="container mx-auto px-4">
+			<div class="text-center mb-16">
+				<Badge title="What We Offer" color="orange" />
+				<h2 class="text-4xl lg:text-5xl font-black text-gray-800 tracking-tight mt-4 mb-4">Cravings Satisfied. <br/><span class="text-brand-green">Events Perfected.</span></h2>
+				<p class="text-gray-500 max-w-2xl mx-auto text-lg">We bring you the perfect blend of casual cafe dining and professional catering, right here in Subhanpura.</p>
+			</div>
+			
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				<!-- Card 1 -->
+				<div class="bg-teal-50/50 rounded-3xl p-8 hover:-translate-y-2 transition-transform duration-300 border border-teal-100 shadow-sm group">
+					<div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm text-brand-green group-hover:scale-110 transition-transform">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-3 text-gray-800">Cafe Classics</h3>
+					<p class="text-gray-600 leading-relaxed font-medium">Indulge in our famous cheesy Maggi, crispy sandwiches, loaded fries, and refreshing thick shakes perfect for a quick bite.</p>
+				</div>
+				<!-- Card 2 -->
+				<div class="bg-orange-50/50 rounded-3xl p-8 hover:-translate-y-2 transition-transform duration-300 border border-orange-100 shadow-sm relative overflow-hidden group">
+					<div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm text-brand-orange group-hover:scale-110 transition-transform relative z-10">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-3 text-gray-800 relative z-10">Party Orders</h3>
+					<p class="text-gray-600 leading-relaxed font-medium relative z-10">Hosting a small get-together or birthday bash? We offer custom bulk orders for all our cafe specialties to delight your guests.</p>
+					<div class="absolute -bottom-10 -right-10 opacity-[0.03] transform group-hover:scale-110 transition-transform duration-700">
+						<svg class="w-48 h-48 text-brand-orange" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"></path></svg>
+					</div>
+				</div>
+				<!-- Card 3 -->
+				<div class="bg-teal-50/50 rounded-3xl p-8 hover:-translate-y-2 transition-transform duration-300 border border-teal-100 shadow-sm group">
+					<div class="w-14 h-14 bg-white rounded-2xl flex items-center justify-center mb-6 shadow-sm text-brand-green group-hover:scale-110 transition-transform">
+						<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-3 text-gray-800">Brahmani Catering</h3>
+					<p class="text-gray-600 leading-relaxed font-medium">Professional premium vegetarian catering for weddings, corporate events, and large celebrations with customized traditional menus.</p>
+				</div>
+			</div>
+		</div>
+	</Section>
+
+	<!-- Our Story Section -->
+	<Section class:list={"bg-stone-50 py-24 relative z-20 border-t border-stone-200/50"}>
+		<div class="container mx-auto px-4 lg:flex lg:items-center lg:justify-between gap-16">
+			<!-- Text Content -->
+			<div class="lg:w-1/2 mb-12 lg:mb-0">
+				<Badge title="Our Story" color="green" />
+				<h2 class="text-4xl lg:text-5xl font-black text-gray-800 tracking-tight mt-4 mb-6">Serving Vadodara <br/><span class="text-brand-orange">Since 2016</span></h2>
+				
+				<div class="prose prose-lg text-gray-600 font-medium">
+					<p class="mb-6">
+						Nestled in the heart of Subhanpura, <strong>Kwik Bytes</strong> started as a humble idea to bring the most comforting cafe flavors to our neighbors. Through the years, our kitchen has become a local staple for quick bites and hearty meals.
+					</p>
+					<p class="mb-6">
+						Inspired by family recipes and the bustling food culture of our city, we eventually expanded into <strong>Brahmani Catering</strong>, offering large-scale premium vegetarian catering for the most special moments of your lives-from weddings to grand corporate events.
+					</p>
+					<blockquote class="border-l-4 border-brand-orange pl-4 italic text-gray-500 font-bold mb-8">
+						"The secret ingredient is always love, and maybe just a little extra cheese."
+					</blockquote>
+				</div>
+			</div>
+
+			<!-- Image Layout -->
+			<div class="lg:w-1/2 relative">
+				<div class="absolute inset-0 bg-brand-green/10 rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
+				<div class="bg-white p-4 rounded-[2.5rem] shadow-xl border border-gray-100">
+					<div class="bg-teal-50 rounded-[2rem] h-96 w-full flex flex-col items-center justify-center overflow-hidden relative group">
+						<Picture
+							src={AuthImage}
+							alt="Authentic food at Kwik Bytes"
+							class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+							formats={["avif", "webp"]}
+						/>
+						<!-- Subtler overlay just to make the image pop slightly -->
+						<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-700"></div>
+						<!-- Dark glassmorphism card at bottom right/center to hold text cleanly without dimming the whole image -->
+						<div class="relative z-10 text-center p-8 mt-auto mb-6 bg-black/40 backdrop-blur-md rounded-3xl border border-white/10 shadow-2xl max-w-[90%] mx-auto">
+							<Badge title="Authenticity first" color="orange" />
+							<p class="font-black text-2xl text-white mt-3 leading-tight drop-shadow-md">Come for the food, <br/><span class="text-brand-orange drop-shadow-md">stay for the memories.</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</Section>
+
+	<!-- Reviews & Socials Section -->
+	<Section class:list={"bg-white pt-24 pb-16 relative z-20 overflow-hidden"}>
+		<div class="absolute inset-0 bg-brand-orange/[0.03] -z-10"></div>
+		
+		<div class="container mx-auto px-4 lg:flex lg:gap-16 lg:items-center">
+			
+			<!-- Reviews Column -->
+			<div class="lg:w-3/5 mb-16 lg:mb-0">
+				<Badge title="Customer Love" color="orange" />
+				<h2 class="text-4xl lg:text-5xl font-black text-gray-800 tracking-tight mt-4 mb-6">Loved by Our <br/><span class="text-brand-orange">Guests</span></h2>
+				<p class="text-gray-600 font-medium text-lg mb-8 max-w-lg">Don't just take our word for it. Check out what our wonderful customers think about our cafe and catering services locally.</p>
+				
+				<ReviewSlider />
+			</div>
+
+			<!-- Instagram Reel Column -->
+			<div class="lg:w-2/5 flex flex-col items-center justify-center relative">
+				<div class="absolute -inset-4 bg-gradient-to-tr from-brand-orange to-brand-green rounded-[3rem] blur-2xl opacity-30 animate-pulse"></div>
+				<div class="relative bg-black rounded-[2rem] shadow-2xl overflow-hidden w-full max-w-[320px] aspect-[9/16] border border-teal-700/50">
+					<iframe 
+						class="w-full h-full"
+						src="https://www.instagram.com/reel/DVL_Qu5DA8E/embed" 
+						frameborder="0" 
+						scrolling="no" 
+						allowtransparency="true"
+					></iframe>
+				</div>
+				<a href="https://www.instagram.com/reel/DVL_Qu5DA8E/" target="_blank" rel="noopener noreferrer" class="relative z-20 mt-8 px-6 py-3 bg-gradient-to-tr from-purple-600 via-pink-600 to-orange-500 rounded-full text-white font-bold tracking-wide flex items-center gap-3 shadow-lg hover:scale-105 transition-transform">
+					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+					Watch on Instagram
+				</a>
+			</div>
+		</div>
+	</Section>
+</Layout>

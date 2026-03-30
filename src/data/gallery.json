@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"title": "aloo-paratha",
+		"image": "/src/assets/images/gallery/Aloo-Paratha.jpg",
+		"alt": "aloo paratha"
+	},
+	{
+		"id": 2,
+		"title": "fries",
+		"image": "/src/assets/images/gallery/Fries.webp",
+		"alt": "fries"
+	},
+	{
+		"id": 3,
+		"title": "kaju-gathiya-shaak",
+		"image": "/src/assets/images/gallery/Kaju-gathiya-shaak.jpg",
+		"alt": "kaju gathiya shaak"
+	},
+	{
+		"id": 4,
+		"title": "maggie",
+		"image": "/src/assets/images/gallery/Maggie.png",
+		"alt": "maggie"
+	},
+	{
+		"id": 5,
+		"title": "milkshake",
+		"image": "/src/assets/images/gallery/milkshake.webp",
+		"alt": "milkshake"
+	},
+	{
+		"id": 7,
+		"title": "tea-coffee",
+		"image": "/src/assets/images/gallery/tea-coffe.avif",
+		"alt": "tea coffee"
+	},
+	{
+		"id": 6,
+		"title": "sandwich",
+		"image": "/src/assets/images/gallery/sandwich.avif",
+		"alt": "sandwich"
+	}
+]

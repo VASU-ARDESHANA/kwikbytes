@@ -1,0 +1,557 @@
+[
+	{
+		"id": 1,
+		"slug": "tea-coffee",
+		"prettyName": "Tea & Coffee",
+		"description": "Hot and refreshing beverages to kickstart your day.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/tea.jpeg",
+		"plates": [
+			{
+				"name": "Masala Tea (Half cup)",
+				"description": "",
+				"price": 10
+			},
+			{
+				"name": "Masala Tea (Full cup)",
+				"description": "",
+				"price": 15
+			},
+			{
+				"name": "Hot Coffee",
+				"description": "",
+				"price": 20
+			},
+			{
+				"name": "Cold Coffee",
+				"description": "",
+				"price": 50
+			},
+			{
+				"name": "Bournvita",
+				"description": "",
+				"price": 50
+			},
+			{
+				"name": "Hot Chocolate",
+				"description": "",
+				"price": 75
+			}
+		]
+	},
+	{
+		"id": 2,
+		"slug": "milk-shake",
+		"prettyName": "Milk Shakes",
+		"description": "Thick and creamy milkshakes in classic flavors.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/MilkShakes.jpeg",
+		"plates": [
+			{
+				"name": "Strawberry Shake",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Mango Shake",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Chocolate Shake",
+				"description": "",
+				"price": 80
+			}
+		]
+	},
+	{
+		"id": 3,
+		"slug": "lassi",
+		"prettyName": "Lassi",
+		"description": "Traditional yogurt-based refreshing drinks.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Lassi.jpg",
+		"plates": [
+			{
+				"name": "Butter Milk",
+				"description": "",
+				"price": 20
+			},
+			{
+				"name": "Sweet Lassi",
+				"description": "",
+				"price": 30
+			},
+			{
+				"name": "Rose Lassi",
+				"description": "",
+				"price": 40
+			},
+			{
+				"name": "Mango Lassi",
+				"description": "",
+				"price": 45
+			},
+			{
+				"name": "Butterscotch Lassi",
+				"description": "",
+				"price": 50
+			}
+		]
+	},
+	{
+		"id": 4,
+		"slug": "fries",
+		"prettyName": "Fries",
+		"description": "Crispy golden fries with various toppings and seasonings.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Fries.jpeg",
+		"plates": [
+			{
+				"name": "Salted Fries",
+				"description": "",
+				"price": 60
+			},
+			{
+				"name": "Mayo Fries",
+				"description": "",
+				"price": 75
+			},
+			{
+				"name": "Peri Peri Fries",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Cheesey Fries",
+				"description": "",
+				"price": 95
+			},
+			{
+				"name": "Maxican Fries",
+				"description": "",
+				"price": 110
+			},
+			{
+				"name": "Extra Dip Sauce",
+				"description": "",
+				"price": 25
+			}
+		]
+	},
+	{
+		"id": 5,
+		"slug": "sandwiches",
+		"prettyName": "Sandwiches",
+		"description": "Fresh vegetable sandwiches with various spreads and layers.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Sandwiches.jpg",
+		"plates": [
+			{
+				"name": "Bread Butter",
+				"description": "",
+				"price": 30
+			},
+			{
+				"name": "Bread Jam",
+				"description": "",
+				"price": 30
+			},
+			{
+				"name": "Chocolate Slice",
+				"description": "",
+				"price": 50
+			},
+			{
+				"name": "Cheese Chatni Sandwich",
+				"description": "",
+				"price": 60
+			},
+			{
+				"name": "Veg Sandwich",
+				"description": "",
+				"price": 50
+			},
+			{
+				"name": "Veg Mayo Sandwich",
+				"description": "",
+				"price": 60
+			},
+			{
+				"name": "Veg Cheese Sandwich",
+				"description": "",
+				"price": 65
+			},
+			{
+				"name": "Veg Mayo Cheese Sandwich",
+				"description": "",
+				"price": 75
+			}
+		]
+	},
+	{
+		"id": 6,
+		"slug": "grill-sandwiches",
+		"prettyName": "Grill Sandwiches",
+		"description": "Hot pressed and grilled sandwiches available in regular or jumbo sizes.",
+		"prettyLayout": "version",
+		"background": "../assets/background/Sandwiches.jpg",
+		"varieties": [
+			{
+				"name": "Regular",
+				"description": "2 Layers"
+			},
+			{
+				"name": "Jumbo",
+				"description": "3 Layers"
+			}
+		],
+		"plates": [
+			{
+				"name": "Veg Grill",
+				"description": "",
+				"price": 70,
+				"price2": 90
+			},
+			{
+				"name": "Veg Mayo Grill",
+				"description": "",
+				"price": 75,
+				"price2": 95
+			},
+			{
+				"name": "Veg Cheese Grill",
+				"description": "",
+				"price": 85,
+				"price2": 105
+			},
+			{
+				"name": "Veg Mayo Cheese Grill",
+				"description": "",
+				"price": 85,
+				"price2": 105
+			},
+			{
+				"name": "Veg Mayo Chilly Corn",
+				"description": "",
+				"price": 85,
+				"price2": 105
+			},
+			{
+				"name": "Vibrant Veggie Grill",
+				"description": "",
+				"price": 100,
+				"price2": 130
+			},
+			{
+				"name": "Paneer Paradise",
+				"description": "",
+				"price": 110,
+				"price2": 140
+			},
+			{
+				"name": "The Double Delight Grill",
+				"description": "",
+				"price": 110,
+				"price2": 140
+			},
+			{
+				"name": "Kwik Bytes Spice Fusion Sandwich (3 Layers only)",
+				"description": "Our signature spicy fusion sandwich",
+				"price": 170,
+				"price2": 170
+			}
+		]
+	},
+	{
+		"id": 7,
+		"slug": "maggi",
+		"prettyName": "Maggi",
+		"description": "Classic instant noodles with various flavorful preparations.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Maggi.jpeg",
+		"plates": [
+			{
+				"name": "Classic Maggi",
+				"description": "",
+				"price": 60
+			},
+			{
+				"name": "Double Masala Maggi",
+				"description": "",
+				"price": 70
+			},
+			{
+				"name": "Butter Double Masala Maggi",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Veg Masala Maggi",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Schezwan Maggi",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Garlic Tadka Maggi",
+				"description": "",
+				"price": 90
+			},
+			{
+				"name": "Veg Cheese Double Masala Maggi",
+				"description": "",
+				"price": 105
+			},
+			{
+				"name": "Kwik Bytes Special Maggi",
+				"description": "",
+				"price": 120
+			}
+		]
+	},
+	{
+		"id": 8,
+		"slug": "gujju-delight",
+		"prettyName": "Gujju Delight (Thepla)",
+		"description": "Traditional Gujarati flatbreads with various toppings and flavors.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Thepla.jpg",
+		"plates": [
+			{
+				"name": "Methi Thepla (2 pcs)",
+				"description": "",
+				"price": 40
+			},
+			{
+				"name": "Methi Thepla with Curd",
+				"description": "",
+				"price": 50
+			},
+			{
+				"name": "Butter Methi Thepla",
+				"description": "",
+				"price": 50
+			},
+			{
+				"name": "Sev Methi Thepla",
+				"description": "",
+				"price": 60
+			},
+			{
+				"name": "Schezwan Methi Thepla",
+				"description": "",
+				"price": 60
+			},
+			{
+				"name": "Mexican Methi Thepla",
+				"description": "",
+				"price": 70
+			},
+			{
+				"name": "Cheese Methi Thepla",
+				"description": "",
+				"price": 70
+			},
+			{
+				"name": "Extra Curd",
+				"description": "",
+				"price": 15
+			}
+		]
+	},
+	{
+		"id": 9,
+		"slug": "paratha-patch",
+		"prettyName": "The Paratha Patch",
+		"description": "Stuffed Indian flatbread served with butter.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Paratha.jpg",
+		"plates": [
+			{
+				"name": "Aloo Paratha",
+				"description": "",
+				"price": 90
+			},
+			{
+				"name": "Onion Aloo Paratha",
+				"description": "",
+				"price": 95
+			},
+			{
+				"name": "Corn Capsicum Aloo Paratha",
+				"description": "",
+				"price": 105
+			},
+			{
+				"name": "Mix Veg Aloo Paratha",
+				"description": "",
+				"price": 110
+			},
+			{
+				"name": "Bikaneri Aloo Paratha",
+				"description": "",
+				"price": 110
+			},
+			{
+				"name": "Paneer Capsicum Aloo Paratha",
+				"description": "",
+				"price": 110
+			},
+			{
+				"name": "Cheese Aloo Paratha",
+				"description": "",
+				"price": 130
+			},
+			{
+				"name": "Cheese Capsicum Aloo Paratha",
+				"description": "",
+				"price": 135
+			},
+			{
+				"name": "Kwik Bytes Special",
+				"description": "",
+				"price": 170
+			}
+		]
+	},
+	{
+		"id": 10,
+		"slug": "sabji-junction",
+		"prettyName": "Sabji Junction",
+		"description": "Traditional Indian curries served with paratha or bhakri.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/Sabji.jpg",
+		"varieties": [
+			{
+				"name": "Sabji with Paratha/Bhakri",
+				"description": "(3 parathas / 2 bhakris)"
+			}
+		],
+		"plates": [
+			{
+				"name": "Aloo Suki Bhaji",
+				"description": "",
+				"price": 70
+			},
+			{
+				"name": "Lasaniya Bateka",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Sev Tameta",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Sev Dungri",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Chana Masala",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Aloo Matar",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Sing Bhajiya Sabji",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Dahi Tikhari",
+				"description": "",
+				"price": 80
+			},
+			{
+				"name": "Punjabi Cholle",
+				"description": "",
+				"price": 90
+			},
+			{
+				"name": "Rajma",
+				"description": "",
+				"price": 90
+			},
+			{
+				"name": "Paneer Sabji",
+				"description": "",
+				"price": 100
+			},
+			{
+				"name": "Kaju Gathiya",
+				"description": "",
+				"price": 110
+			},
+			{
+				"name": "Kaju Paneer",
+				"description": "",
+				"price": 120
+			},
+			{
+				"name": "Paneer Bhurji",
+				"description": "",
+				"price": 130
+			},
+			{
+				"name": "Cheese Butter Masala",
+				"description": "",
+				"price": 130
+			},
+			{
+				"name": "Kwik Bytes Spl. Sabji",
+				"description": "",
+				"price": 150
+			},
+			{
+				"name": "Extra Paratha",
+				"description": "",
+				"price": 15
+			},
+			{
+				"name": "Extra Bhakri",
+				"description": "",
+				"price": 20
+			}
+		]
+	},
+	{
+		"id": 11,
+		"slug": "kwik-bytes-spl",
+		"prettyName": "Kwik Bytes Spice",
+		"description": "Signature specials from Kwik Bytes you must try.",
+		"prettyLayout": "normal",
+		"background": "../assets/background/black.jpg",
+		"plates": [
+			{
+				"name": "Kwik Bytes Spice Fusion Sandwich",
+				"description": "Our signature spicy fusion sandwich",
+				"price": 170
+			},
+			{
+				"name": "Kwik Bytes Special Maggi",
+				"description": "Our chef's special Maggi creation",
+				"price": 120
+			},
+			{
+				"name": "Kwik Bytes Special paratha",
+				"description": "Special stuffed paratha",
+				"price": 170
+			},
+			{
+				"name": "Kwik Bytes Spl. Sabji",
+				"description": "Our special house curry",
+				"price": 150
+			}
+		]
+	}
+]

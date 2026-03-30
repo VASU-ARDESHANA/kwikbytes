@@ -1,0 +1,103 @@
+---
+import "~/styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import favicon from "~/assets/favicon.png";
+import Header from "~/components/Header.astro";
+import Footer from "~/components/Footer.astro";
+import { siteLang, themeColor } from "~/data/config";
+
+const { pageTitle } = Astro.props;
+const baseUrl = `${Astro.url.protocol}//${Astro.url.host}`;
+
+const business = {
+	name: "Kwik Bytes Cafe & Brahmani Catering",
+	pageTitle:
+		pageTitle ||
+		"Kwik Bytes Cafe & Brahmani Catering | Cafe & Catering in Subhanpura, Vadodara",
+	description:
+		"Kwik Bytes Cafe and Brahmani Catering in Subhanpura, Vadodara. Serving mouth-watering Maggi, sandwiches, thick shakes, and offering premium vegetarian catering for weddings, parties, and corporate events since 2016.",
+	keywords:
+		"Kwik Bytes, Kwik Bytes Cafe, Brahmani Catering, quick bites vadodara, cafe in Subhanpura Vadodara, best maggi in vadodara, catering services vadodara, wedding catering Vadodara, event catering Gujarat, thick shakes vadodara, vegetarian catering, gujarati thali catering",
+};
+---
+
+<!doctype html>
+<html lang={siteLang}>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content={themeColor} />
+
+		<!-- Primary SEO -->
+		<title>{business.pageTitle}</title>
+		<meta name="description" content={business.description} />
+		<meta name="keywords" content={business.keywords} />
+		<meta name="author" content={business.name} />
+
+		<!-- Local SEO -->
+		<meta name="geo.region" content="IN-GJ" />
+		<meta name="geo.placename" content="Vadodara" />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={business.pageTitle} />
+		<meta property="og:description" content={business.description} />
+		<meta property="og:url" content={baseUrl} />
+		<meta property="og:image" content={`${baseUrl}${favicon.src}`} />
+		
+		<!-- Twitter / X -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={business.pageTitle} />
+		<meta name="twitter:description" content={business.description} />
+		<meta name="twitter:image" content={`${baseUrl}${favicon.src}`} />
+		
+		<link rel="icon" type="image/png" href={favicon.src} />
+
+		<!-- JSON-LD Structured Data for Local Business SEO -->
+		<script type="application/ld+json" set:html={`
+		{
+			"@context": "https://schema.org",
+			"@type": ["FoodEstablishment", "CafeOrCoffeeShop"],
+			"name": "Kwik Bytes Cafe & Brahmani Catering",
+			"image": "${baseUrl}${favicon.src}",
+			"@id": "${baseUrl}",
+			"url": "${baseUrl}",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Subhanpura",
+				"addressLocality": "Vadodara",
+				"addressRegion": "GJ",
+				"addressCountry": "IN"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": 22.3179113,
+				"longitude": 73.1613985
+			},
+			"servesCuisine": "Cafe, Fast Food, Indian, Vegetarian",
+			"priceRange": "₹₹",
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "4.8",
+				"bestRating": "5",
+				"worstRating": "1",
+				"ratingCount": "142"
+			}
+		}
+		`} />
+
+		<style is:global>
+			@import "swiper/css";
+		</style>
+
+		<ClientRouter />
+	</head>
+
+	<body>
+		<Header />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>

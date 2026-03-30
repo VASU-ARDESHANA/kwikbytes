@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"author": "Aakanksha Janday",
+		"review": "Good tasty food. Reasonable for everyday office people. - Do try Veg tadka maggi.",
+		"rating": 5
+	},
+	{
+		"id": 2,
+		"author": "Vikas Kundaliya",
+		"review": "One of the Best Places ever visited in Vadodara for having a bite full of authenticity.",
+		"rating": 5
+	},
+	{
+		"id": 3,
+		"author": "Brijesh Ahir",
+		"review": "Delicious food with reasonable price 🤤😋Must visit once 🤌🏻 Owner behaviour is very friendly, I try Poha and thepla it was very tasty 😋 He also make good tea ☕",
+		"rating": 5
+	},
+	{
+		"id": 4,
+		"author": "Harshid07",
+		"review": "Nice food and good pace👍👍",
+		"rating": 4
+	},
+	{
+		"id": 5,
+		"author": "Meera Patel",
+		"review": "Booked Brahmani Catering for a family housewarming event. The menu selection was incredible and our guests couldn't stop praising the Gujurati Thali items. Pure perfection!",
+		"rating": 5
+	},
+	{
+		"id": 6,
+		"author": "Rohan Shah",
+		"review": "My go-to spot for an evening chill. Their thick shakes are easily the best in Subhanpura. Fast service and a really cool vibe.",
+		"rating": 5
+	}
+]
