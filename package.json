@@ -5,11 +5,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "npm run build && wrangler dev",
+    "astro": "astro",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.9",
+    "@astrojs/cloudflare": "12",
     "@astrojs/mdx": "^4.2.4",
     "@playform/inline": "^0.1.2",
     "@tailwindcss/typography": "^0.5.16",
@@ -22,5 +25,8 @@
     "pdf-parse": "^2.4.5",
     "swiper": "^11.1.15",
     "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "wrangler": "^4.80.0"
   }
 }
