@@ -1,13 +1,14 @@
 ---
 import "~/styles/global.css";
 import { ClientRouter } from "astro:transitions";
-import favicon from "~/assets/favicon.png";
 import Header from "~/components/Header.astro";
 import Footer from "~/components/Footer.astro";
 import { siteLang, themeColor } from "~/data/config";
 
 const { pageTitle } = Astro.props;
 const baseUrl = `${Astro.url.protocol}//${Astro.url.host}`;
+const faviconUrl =
+	"https://pub-f81aafbf27c44ec48c83c324ebe91ea1.r2.dev/favicon.png";
 
 const business = {
 	name: "Kwik Bytes Cafe & Brahmani Catering",
@@ -43,15 +44,15 @@ const business = {
 		<meta property="og:title" content={business.pageTitle} />
 		<meta property="og:description" content={business.description} />
 		<meta property="og:url" content={baseUrl} />
-		<meta property="og:image" content={`${baseUrl}${favicon.src}`} />
+		<meta property="og:image" content={faviconUrl} />
 		
 		<!-- Twitter / X -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={business.pageTitle} />
 		<meta name="twitter:description" content={business.description} />
-		<meta name="twitter:image" content={`${baseUrl}${favicon.src}`} />
+		<meta name="twitter:image" content={faviconUrl} />
 		
-		<link rel="icon" type="image/png" href={favicon.src} />
+		<link rel="icon" type="image/png" href={faviconUrl} />
 
 		<!-- JSON-LD Structured Data for Local Business SEO -->
 		<script type="application/ld+json" set:html={`
@@ -59,7 +60,7 @@ const business = {
 			"@context": "https://schema.org",
 			"@type": ["FoodEstablishment", "CafeOrCoffeeShop"],
 			"name": "Kwik Bytes Cafe & Brahmani Catering",
-			"image": "${baseUrl}${favicon.src}",
+			"image": "${faviconUrl}",
 			"@id": "${baseUrl}",
 			"url": "${baseUrl}",
 			"address": {

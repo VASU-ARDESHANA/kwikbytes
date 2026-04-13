@@ -5,10 +5,11 @@ import Hero from "~/components/Hero.astro";
 import Badge from "~/components/Badge.astro";
 import Button from "~/components/Button.astro";
 import ReviewSlider from "~/components/ReviewSlider.astro";
-import Logo from "~/assets/logo.png";
-import AuthImage from "~/assets/authenticity.jpg";
-import { Picture, Image } from "astro:assets";
-import { loadRenderers } from "astro:container";
+
+const logoUrl =
+	"https://pub-f81aafbf27c44ec48c83c324ebe91ea1.r2.dev/logo.png";
+const authenticityUrl =
+	"https://pub-f81aafbf27c44ec48c83c324ebe91ea1.r2.dev/authenticity.jpg";
 ---
 
 <Layout
@@ -46,14 +47,13 @@ import { loadRenderers } from "astro:container";
 			</div>
 			<div slot="hero-content-right" class="relative">
 				<div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/20 to-brand-green/20 rounded-full blur-3xl -z-10 transform scale-75 animate-pulse transition-all duration-1000"></div>
-				<Picture
-					class:list={"mx-auto animate-float drop-shadow-2xl"}
-					src={Logo}
-					height={600}
-					formats={["avif", "webp"]}
-					alt="A description of my image."
-					loading={"eager"}
-					fetchpriority={"high"}
+				<img
+					class="mx-auto animate-float drop-shadow-2xl"
+					src={logoUrl}
+					alt="Kwik Bytes logo"
+					height="600"
+					loading="eager"
+					fetchpriority="high"
 				/>
 			</div>
 		</Hero>
@@ -127,11 +127,11 @@ import { loadRenderers } from "astro:container";
 				<div class="absolute inset-0 bg-brand-green/10 rounded-[3rem] transform rotate-3 scale-105 -z-10"></div>
 				<div class="bg-white p-4 rounded-[2.5rem] shadow-xl border border-gray-100">
 					<div class="bg-teal-50 rounded-[2rem] h-96 w-full flex flex-col items-center justify-center overflow-hidden relative group">
-						<Picture
-							src={AuthImage}
+						<img
+							src={authenticityUrl}
 							alt="Authentic food at Kwik Bytes"
 							class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-							formats={["avif", "webp"]}
+							loading="lazy"
 						/>
 						<!-- Subtler overlay just to make the image pop slightly -->
 						<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-700"></div>

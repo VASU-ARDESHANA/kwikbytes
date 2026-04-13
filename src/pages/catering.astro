@@ -7,9 +7,9 @@ import Badge from "~/components/Badge.astro";
 import ButtonCallUs from "~/components/ButtonCallUs.astro";
 import ButtonCallSumitBhai from "~/components/ButtonCallSumitBhai.astro";
 import { phone, sumitBhaiNumber } from "~/data/config";
-import Brahmani from "~/assets/brahmani.png";
-import Brahmani_black from "~/assets/brahmani_black.png";
-import { Picture, Image } from "astro:assets";
+
+const brahmaniBlackUrl =
+	"https://pub-f81aafbf27c44ec48c83c324ebe91ea1.r2.dev/brahmani_black.png";
 ---
 
 <Layout
@@ -21,14 +21,13 @@ import { Picture, Image } from "astro:assets";
 		<Hero>
 			<div slot="hero-content-right" class="relative">
 				<div class="absolute inset-0 bg-brand-orange/10 rounded-[3rem] blur-2xl -z-10 transform scale-90 animate-pulse"></div>
-				<Picture
-					class:list={"mx-auto drop-shadow-2xl animate-float"}
-					src={Brahmani_black}
-					height={500}
-					formats={["avif", "webp"]}
+				<img
+					class="mx-auto drop-shadow-2xl animate-float"
+					src={brahmaniBlackUrl}
 					alt="Brahmani Catering Logo"
-					loading={"eager"}
-					fetchpriority={"high"}
+					height="500"
+					loading="eager"
+					fetchpriority="high"
 				/>
 			</div>
 			<div slot="hero-content-left" class="prose max-w-none relative z-10">
