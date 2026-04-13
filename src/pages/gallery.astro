@@ -6,6 +6,8 @@ import { Picture } from "astro:assets";
 import { getCollection } from "astro:content";
 
 const gallery = await getCollection("gallery");
+const getImageSrc = (image?: string | { src?: string }) =>
+	typeof image === "string" ? image : image?.src;
 ---
 
 <Layout
@@ -29,7 +31,7 @@ const gallery = await getCollection("gallery");
 		{
 			gallery.map((item, index) => (
 				<div class="break-inside-avoid relative overflow-hidden rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 group bg-gray-100">
-					<a href={item.data.image.src} class="glightbox block w-full h-full relative">
+					<a href={getImageSrc(item.data.image)} class="glightbox block w-full h-full relative">
 						{/* Overlay Effects */}
 						<div class="absolute inset-0 bg-brand-green/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
 						<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none"></div>
@@ -44,6 +46,7 @@ const gallery = await getCollection("gallery");
 						<Picture
 							src={item.data.image}
 							alt={item.data.alt}
+							inferSize={true}
 							class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700 block"
 							loading={index < 4 ? "eager" : "lazy"}
 							fetchpriority={index < 4 ? "high" : "auto"}
